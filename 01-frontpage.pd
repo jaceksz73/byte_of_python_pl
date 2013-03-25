@@ -1,30 +1,31 @@
 % A Byte of Python
 % Swaroop C H
+% Translation: Jacek Sz
 % $$date$$
 
-# A Byte of Python
+# A Byte of Python - Polish
 
-'A Byte of Python' jest darmową książką o programowaniu z użyciem języka Python. Może ona służć ona jako tutorial lub przewodnik po języku Python dla początkujących. Jeśli wszystko co wiesz o komputerach to jak zapisać plik tekstowy, to ta książka jest dla ciebie.
+'A Byte of Python' jest darmową książką o programowaniu z użyciem języka Python. Może ona służć jako tutorial lub przewodnik po języku Python dla początkujących. Jeśli wszystko co wiesz o komputerach to jak zapisać plik tekstowy, to ta książka jest dla ciebie.
 
-This book is written for the latest Python 3, even though Python 2 is the commonly found version of Python today (read more about it in [Python 2 versus 3 section](#python-2-versus-3)).
+Książka ta opisuje ostatnie wydanie Pythona 3, pomimo, że Python 2 jest obecnie najpopularniszą wersją (więcej możesz przeczytać w [sekcji Python 2 versus 3](#python-2-versus-3))
 
-## Who Reads A Byte of Python?
+## Kto czyta A Byte of Python?
 
-Here are what people are saying about the book:
+Oto co mówią o tej książce:
 
-> The best thing i found was "A Byte of Python", which is simply a brilliant book for a beginner. It's well written, the concepts are well explained with self evident examples.
+> Nalepsze co znalazłem to "A Byte of Python", to poprostu wpaniała książka dla początkujących. Jest dobrze napisana, zagadnienia są dobrze wyjaśnione, przykłady są dobrze dobrane.
 >
-> -- [_Syed Talal_ (19 years old)](http://littlepancakes.wordpress.com/2010/01/30/python)
+> -- [_Syed Talal_ (19-latek)](http://littlepancakes.wordpress.com/2010/01/30/python)
 
 >  
 
-> This is the best beginner's tutorial I've ever seen! Thank you for your effort.
+> To jest najlepszy tutorial dla początkujących jak kiedykolwiek widziałem! Dziękuję za wasz wysiłek.
 >
 > -- _Walt Michalik_ (wmich50-at-theramp-dot-net)
 
 >  
 
-> You've made the best Python tutorial I've found on the Net. Great work. Thanks!
+> Stworzyliście najlepszy tutorial jaki znalazłem w sieci. Wspaniała praca. Dzięki!
 >
 > -- _Joshua Robin_ (joshrob-at-poczta-dot-onet-dot-pl)
 
