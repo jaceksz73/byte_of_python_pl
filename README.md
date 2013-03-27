@@ -1,5 +1,12 @@
 # A Byte of Python
 
+Convert to pdf example:
+windows key + R 
+cmd
+cd d:\zbiory\wiedza\python\byte_of_python_pl
+pandoc 02-preface.pd -o 02-preface.pdf
+copy/paste - right click in cmd
+
 ## Installation
 
 Ensure Python (&gt;= 2.7) is installed.
