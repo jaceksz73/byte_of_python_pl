@@ -36,116 +36,114 @@ Nie możemy pisać naszych programów w Interpreterze za każdym razem gdy chcem
 
 Żeby stworzyć plik źródłowy Pythona, potrzebujemy program do edycji, gdzie będziemy mogli pisać i zapisywać. Dobry edytor dla programistów ułatwi ci życie w pisaniu plików źródłowych. Dlatego wybór edytora jest bardzo istotny. Musisz wybrać edytor tak jak wybierasz samochód. Dobry edytor pomoże ci pisać programy Pythona łatwiej. Uczyni twoją podróż bardziej komfortową i pomoże ci osiągnąć cel (metę) znacznie szybciej i bezpieczniej.
 
-One of the very basic requirements is *syntax highlighting* where all the different parts of your Python program are colorized so that you can *see* your program and visualize its running.
+Jednym z podstawowych wymagań jest *wyróżnianie składni* gdzie wszystkie różne części twojego programu Python są kolorowane. W ten sposób możesz *widzieć* twój program i wizualizować (wyobrażać sobie) jego działanie.
 
-If you have no idea where to start, I would recommend using [Komodo Edit](http://www.activestate.com/komodo-edit/downloads) software which is available on Windows, Mac OS X and Linux.
+Jeśli nie wiesz jak i gdzie wystartować, mogę ci zarekomendować użycie [Komodo Edit](http://www.activestate.com/komodo-edit/downloads) program, który jest dostępny na Windows, Mac OS X i Linux.
 
-If you are using Windows, **do not use Notepad** - it is a bad choice because it does not do syntax highlighting and also importantly it does not support indentation of the text which is very important in our case as we will see later. Good editors such as Komodo Edit will automatically do this.
+Jeśli używasz Windows, **do not use Notepad** - to jest zły wybór ponieważ nie obsługuje on wyróżniania składni i co ważniejsze nie wspiera wcięć tekstu, co jest niezwykle ważne w naszym przypadku, co zobaczymy później. Dobry edytor taki jak Komodo Edit będzie to robił automatycznie.
 
-If you are an experienced programmer, then you must be already using [Vim](http://www.vim.org/) or [Emacs](http://www.gnu.org/software/emacs/). Needless to say, these are two of the most powerful editors and you will benefit from using them to write your Python programs. I personally use both for most of my programs, and have even written an [entire book on Vim](http://www.swaroopch.com/notes/vim). In case you are willing to take the time to learn Vim or Emacs, then I highly recommend that you do learn to use either of them as it will be very useful for you in the long run. However, as I mentioned before, beginners can start with Komodo Edit and focus the learning on Python rather than the editor at this moment.
+Jeśli jesteś doświadczonym programistą, zapewne używasz [Vim](http://www.vim.org/) lub [Emacs](http://www.gnu.org/software/emacs/). Nie trzeba dodawać, że te dwa programy są najpotężniejszymi edytorami i będziesz miał korzyści z używania ich w pisaniu programów Python. Personalnie używam obu do pisania większości moich programów. Napisałem nawet [całą książkę o Vim](http://www.swaroopch.com/notes/vim). Jeśli chciałbyś poświęcić czas na naukę Vim lub Emacs, to ja rekomenduję ci nauczyć się obu. Umiejętność ta będzie użyteczna na długi czas. Jednak tak jak wcześniej wspomniałem, początkujący mogą rozpocząć z Komodo Edit i skupić w tym momencie swoją naukę raczej na Pytonie niż na edytorze. 
 
-To reiterate, please choose a proper editor - it can make writing Python programs more fun and easy.
+Powtarzam, proszę wybierz odpowiedni edytor - pozwoli ci to pisać programy Python łatwiej i zabawniej.
 
-For Vim users
+Dla użytkowników Vim
 
-:   There is a good introduction on how to [make Vim a powerful Python IDE by John M Anderson](http://blog.sontek.net/blog/detail/turning-vim-into-a-modern-python-ide). Also recommended is the [jedi-vim plugin](https://github.com/davidhalter/jedi-vim) and my [own dotvim configuration](https://github.com/swaroopch/dotvim).
+:   Jest dobre wprowadzenie jak [zrobić z Vim-a potężny IDE Pythona - John M Anderson](http://blog.sontek.net/blog/detail/turning-vim-into-a-modern-python-ide). Także godne uwagi jest [jedi-vim plugin](https://github.com/davidhalter/jedi-vim) i moje własne [konfiguracja dotvim](https://github.com/swaroopch/dotvim).
 
-For Emacs users
+Dla użytkowników Emacs
+:   Jest dobre wprowadzenie jak [zrobić z Emacs a potężny IDE Pythona - Pedro Kroger](http://pedrokroger.net/2010/07/configuring-emacs-as-a-python-ide-2/). Także godne uwagi jest [konfiguracja dotemacs](https://github.com/ghoseb/dotemacs).
 
-:   There is a good introduction on how to [make Emacs a powerful Python IDE by Pedro Kroger](http://pedrokroger.net/2010/07/configuring-emacs-as-a-python-ide-2/). Also recommended is [BG's dotemacs configuration](https://github.com/ghoseb/dotemacs).
+## Używanie plików źródłowych
 
-## Using A Source File
+Teraz wróćmy do programowania. Jest pewną tradycją, że kiedykowiek uczysz się języka programowania, pierwszy program, który piszesz i uruchamiasz to 'Hello World' - wszystko co on robi to poprostu mówi 'Hello World' kiedy go uruchomisz.
 
-Now let's get back to programming. There is a tradition that whenever you learn a new programming language, the first program that you write and run is the 'Hello World' program - all it does is just say 'Hello World' when you run it. As Simon Cozens (the author of the amazing 'Beginning Perl' book) puts it, it is the "traditional incantation to the programming gods to help you learn the language better."
+Uruchom wybrany przez ciebie edytor, wprowadź następjący program i zapisz go jako `hello.py`.
 
-Start your choice of editor, enter the following program and save it as `hello.py`.
-
-If you are using Komodo Edit, click on `File` --- `New` --- `New File`, type the lines:
+Jeśli używasz Komodo Edit, kliknij na `File` --- `New` --- `New File`, napisz następjące linijki:
 
 ~~~python
 print('Hello World')
 ~~~
 
-In Komodo Edit, do `File` --- `Save` to save to a file.
+W Komodo Edit, wykonaj `File` --- `Save` żeby zapisać plik.
 
-Where should you save the file? To any folder for which you know the location of the folder. If you don't understand what that means, create a new folder and use that location to save and run all your Python programs:
+Gdzie powinieneś zapisać plik? W jakimkolwiek katalogu, do którego znasz lokalizację. Jeśli nie rozumiesz co to znaczy, stwórz nowy katalog użyj tej lokalizacji do zapisywania i uruchamiania wszystkich twoich programów Pythona.
 
 - `C:\\py` on Windows
 - `/tmp/py` on Linux
 - `/tmp/py` on Mac OS X
 
-To create a folder, use the `mkdir` command in the terminal, for example, `mkdir /tmp/py`.
+Żeby stworzyć katalog użyj  komendy `mkdir` w terminalu. Np. `mkdir /tmp/py`
 
-Important
+Ważne
 
-:   Always ensure that you give it the file extension of `.py`, for example, `foo.py`.
+:   Zawsze upewnij się, że dodajesz rozszeżenie `.py`, np. `foo.py`.
 
-In Komodo Edit, click on `Tools` --- `Run Command`, type `python3 hello.py` and click on `Run` and you should see the output printed like in the screenshot below.
+W Komodo Edit kliknij na `Tools` --- `Run Command`, napisz `python3 hello.py` i kliknij na `Run`. Powinieneś widzieć wynik podobny do pokazanego na poniższym screenshot-cie. 
 
 ![Screenshot of Komodo Edit with the Hello World program](assets/komodo-edit-hello-world.png)
 
-The best way, though, is to type it in Komodo Edit but to use a terminal:
+Najlepiej po prostu wpisać w Komodo Edit, ale użyć terminala:
 
-#. Open a terminal as explained in the [Installation chapter](#installation).
-#. *C*hange *d*irectory where you saved the file, for example, `cd /tmp/py`
-#. Run the program by entering the command `python3 hello.py`.
+#. Otwórz terminal jak wyjaśniono w [Rozdziale Instalacja](#installation).
+#. Zmień katalog na taki gdzie zapisałeś plik, np. `cd /tmp/py`
+#. Uruchom program przez wprowadzenie komendy `python3 hello.py`
 
-The output is as shown below.
+Wyjście jest tak jak pokazano poniżej.
 
 ~~~
 $ python3 hello.py
 Hello World
 ~~~
 
-If you got the output as shown above, congratulations! - you have successfully run your first Python program. You have successfully crossed the hardest part of learning programming, which is, getting started with your first program!
+Jeśli otrzymałeś wyjście takie jak pokazane powyżej, gratulacje! - pomyślnie uruchomiłeś twój pierwszy program Python. Pomyślnie przekroczyłeś najtrudniejszą część nauki programowania, to jest, rozpoczęcie pracy z pierwszym programem!
 
-In case you got an error, please type the above program *exactly* as shown above and run the program again. Note that Python is case-sensitive i.e. `print` is not the same as `Print` - note the lowercase `p` in the former and the uppercase `P` in the latter. Also, ensure there are no spaces or tabs before the first character in each line - we will [see why this is important later](#indentation).
+Jeśli otrzymałeś błąd, proszę napisz powyższy program *dokładnie* jak jest pokazane powyżej i uruchom program jeszcze raz. Zauważ, że Python rozróżnia wielkość liter. Np. `print` to nie to samo co `Print` - w pierwszym przypadku mamy małe `p`, w drugim dużą literę `P`. Ponadto, upewnij się, że nie ma żadnych spacji i tabulacji przed pierwszym znakiem każdej linii - zobaczymy później dlaczego [jest to tak ważne](#indentation) 
 
-**How It Works**
+**Jak to działa**
+Program Python składa się z *wyrażeń*. W twoim pierwszym prgramie mamy tylko jedno wyrażenie. W tym wyrażeniu wywołujemy *funkcję* `print`, która tylko wypisuje tekst `'Hello World'`. Będziemy uczyli się o funkcjach szczegółowo w [późniejszym rodziale](#functions). To co powinieneś zrozumieć teraz, to - cokolwiek dostarczysz w nawiasach będzie wypisane na ekranie. W tym przypadku dostarczamy tekst `"Hello World"`. 
 
-A Python program is composed of *statements*. In our first program, we have only one statement. In this statement, we call the `print` *function* which just prints the text `'Hello World'`. We will learn about functions in detail in a [later chapter](#functions) - what you should understand now is that whatever you supply in the parentheses will be printed back to the screen. In this case, we supply the text `'Hello World'`.
+### Wykonywalny Program Python
 
-### Executable Python Programs
+To dotyczy tylko użytkowników Linuxa i Unixa, ale użytkownicy powinni również to wiedzieć.
 
-This applies only to Linux and Unix users but Windows users should know this as well.
+Za każdym razem gdy chcesz uruchomić program Pythona, musimy jawnie wywołać `python3 foo.py`, ale dlaczego nie możemy uruchomić go tak jak inny program na naszym komputerze? Możemy to osiągnąć przez użycie czegoś co nazywamy linię *hashbang*.
 
-Every time, you want to run a Python program, we have to explicitly call `python3 foo.py`, but why can't we run it just like any other program on our computer? We can achieve that by using something called the *hashbang* line.
-
-Add the below line as the *first line* of your program:
+Dodaj poniższą linie jako *pierwszą* w twoim programie:
 
 ~~~python
 #!/usr/bin/env python3
 ~~~
 
-So, your program should look like this now:
+A więc twój program powinien wygląć tak:
 
 ~~~python
 #!/usr/bin/env python3
 print('Hello World')
 ~~~
 
-Second, we have to give the program executable permission using the `chmod` command then *run* the source program.
+Po drugie, musimy nadać programowi uprawnienia wykonywalności. Użyjemy do tego komendy `chmod`.
 
-The chmod command is used here to *ch*ange the *mod*e of the file by giving e*x*ecute permission to *a*ll users of the system.
+Komenda chmod jest użyta tu do zmiany trybu pliku nadanie uprawnienia wykonywalności dla wszystkich użytkowników systemu. 
 
 ~~~
 $ chmod a+x hello.py
 ~~~
 
-Now, we can run our program directly because our operating system calls `/usr/bin/env` which in turn will find our Python 3 software and hence knows how to run our source file:
+Teraz możemy uruchomić nasz program bezpośrednio ponieważ nasz system operacyjny wywoła '/usr/bin/env', który z kolei znajdzie `Python 3` a ten wie jak uruchomić nasz prgram źródłowy:
 
 ~~~
 $ ./hello.py
 Hello World
 ~~~
 
-We use the `./` to indicate that the program is located in the current folder.
+Użyliśmy `./` aby wskazać, że program znajduje się w obecnym katalogu.
 
-To make things more fun, you can rename the file to just `hello` and run it as `./hello` and it will still work since the system knows that it has to run the program using the interpreter whose location is specified in the first line in the source file.
+Żeby uczynić rzeczy bardziej zabawne, możesz zmienić nazwę pliku na po prostu `hello` i uruchomić go jako `./hello`. Będzie on nadal działał dopóki system wie, że musi uruchomić program używająć interpretera wyspecyfikowanego w pierwszej linii pliku źródłowego.
 
-So far, we have been able to run our program as long as we know the exact path. What if we wanted to be able to run the program from folder? You can do this by storing the program in one of the folders listed in the `PATH` environment variable.
+A więc do tej pory byliśmy w stanie uruchomić nasz program dopóki znamy dokładną ścieżkę. Co jeśli chcemy uruchomić program z innego folderu? Możesz to zrobić przez umieszczenie programu w jednym z katalogów wymienionych w zmiennej środowiskowej `PATH`.
 
-Whenever you run any program, the system looks for that program in each of the folders listed in the `PATH` environment variable and then runs that program. We can make this program available everywhere by simply copying this source file to one of the directories listed in `PATH`.
+Gdziekolwiek uruchomisz jakikolwiek program, system szuka tego programu we wszystkich katalogach wymienionych w zmiennej środowiskowej `PATH` i uruchamia ten program. Możemy sprawić aby program był dostępny wszędzie przez proste skopiowanie pliku źródłowego do jednego z katalogów wymienionych w zmiennej środowiskowej `PATH`.
 
 ~~~
 $ echo $PATH
@@ -155,26 +153,25 @@ $ hello
 Hello World
 ~~~
 
-We can display the `PATH` variable using the `echo` command and prefixing the variable name by `$` to indicate to the shell that we need the value of this "environment variable". We see that `/home/swaroop/bin` is one of the directories in the PATH variable where *swaroop* is the username I am using in my system. There will usually be a similar directory for your username on your system.
+Możemy wyświetlić zmienną `PATH` używająć komenty `echo` i poprzedzić nazwę zmiennej znakiem `$` aby wskazać powłoce, że potrzebujemy wartość tej "zmiennej środowiskowej". Widzimy, że `/home/swaroop/bin` jest jednym z katalogów w zmiennej  PATH gdzie *swaroop* jest nazwą użytkownika jaką używam w moim systemie. W twoim systemie powinien być podobny katalog z twoją nazwą użytkownika.
 
-If you want to add a directory of your choice to the `PATH` variable - this can be done by running `export PATH=$PATH:/home/swaroop/mydir` where `'/home/swaroop/mydir'` is the directory I want to add to the `PATH` variable.
+Jeśli chcesz dodać katalog do zmiennej `PATH` - to może być zrobione poprzez uruchomienie `export PATH=$PATH:/home/swaroop/mydir` gdzie `'/home/swaroop/mydir'` jest katalogiem który chcę dodać do zmiennej `PATH`
 
-This method is very useful if you want to write commands you can run anytime, anywhere. It is like creating your own commands just like `cd` or any other commands that you use in the terminal.
+Ta metoda jest bardzo pomocna jeśli chcesz pisać komendy kiedykolwiek i gdziekolwiek. To jest jak stworzenie twojej własnej komendy `d` lub innej, którą używasz w terminalu.
 
-## Getting Help
+## Uzyskiwanie Pomocy
 
-If you need quick information about any function or statement in Python, then you can use the built-in `help` functionality. This is very useful especially when using the interpreter prompt. For example, run `help(print)` - this displays the help for the print function which is used to print things to the screen.
+Jeśli potrzebujesz szybkiej informacji o jakiejś funkcji lub wyrażeniu w Pythonie, możesz użyć wbudowanej funkcjonalnośc `help`. To jest bardzo pomocne szczególnie kiedy używamy interpretera. Np. uruchom `help(print)` - wyświetli to pomoc dla funkcji print, która jest używana do wyświetlania rzeczy na ekranie.
 
-Note
+Uwaga
 
-:   Press `q` to exit the help.
+:   Naciśnij `q` aby wyjść z trybu pomocy.
+Podobnie, możesz uzyskać informacje o prawie wszystkim w Pythonie. Użyj `help()` aby naczyć się samodzielnie więcej o `pomocy`!
 
-Similarly, you can obtain information about almost anything in Python. Use `help()` to learn more about using `help` itself!
+W przypadku gdzy potrzrebujesz uzyskać pomoc o operatorach jak `return`, musisz użyć cudzysłowów np. `help('retur')`. W ten sposób Python będzie wiedział zamierzamy zrobić.
 
-In case you need to get help for operators like `return`, then you need to put those inside quotes such as `help('return')` so that Python doesn't get confused on what we're trying to do.
+## Podsumowanie
 
-## Summary
+Powinieneś być teraz w stanie z łątwością napisać, zapisać i uruchomić program Pythona. 
 
-You should now be able to write, save and run Python programs at ease.
-
-Now that you are a Python user, let's learn some more Python concepts.
+Teraz gdy jesteś użytkownikiem Pythona, nauczmy się trochę więcej o koncepcjach Pythona.
