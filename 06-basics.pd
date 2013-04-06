@@ -1,57 +1,58 @@
-# Basics
+# Podstawy
 
-Just printing 'Hello World' is not enough, is it? You want to do more than that - you want to take some input, manipulate it and get something out of it. We can achieve this in Python using constants and variables, and we'll learn some other concepts as well in this chapter.
 
-## Comments
+Wyświetlone właśnie 'Hello World' nie jest wystarczające, prawda? Chciałbyś zrobić więcej niż to - chciałbyś wziąć coś z wejścia, przetworzyć to otrzymać coś na wyjściu. Możemy to osiągnąć w Pythonie używając stałych i zmiennych. Nauczymy się też innych koncepcji w tym rozdziale.
 
-*Comments* are any text to the right of the `#` symbol and is mainly useful as notes for the reader of the program.
+## Komentarze
 
-For example:
+*Komentarze* są dowolnym tekstem na prawo od symbolu `#` i są głównie używane jako notatki dla czytających program.
+
+Przykład:
 
 ~~~python
-print('Hello World') # Note that print is a function
+print('Hello World') # Zauważ, że print jest funkcją
 ~~~
 
-or:
+lub:
 
 ~~~python
-# Note that print is a function
+# Zauważ, że print jest funkcją
 print('Hello World')
 ~~~
 
-Use as many useful comments as you can in your program to:
+Używaj tak dużo użytecznych komentarzy ile możesz w twoim programu do:
 
-- explain assumptions
-- explain important decisions
-- explain important details
-- explain problems you're trying to solve
-- explain problems you're trying to overcome in your program, etc.
+- wyjaśnienia założeń
+- wyjaśnienia ważnych decyzji
+- wyjaśnienia ważnych detali
+- wyjaśnienia problemów, które próbujesz rozwiązać
+- wyjaśnienia problemów, które próbujesz pokonać
 
-[*Code tells you how, comments should tell you why.*](http://www.codinghorror.com/blog/2006/12/code-tells-you-how-comments-tell-you-why.html)
+[*Kod powie ci jak, komentarze powinny powiedzieć ci dlaczego.*](http://www.codinghorror.com/blog/2006/12/code-tells-you-how-comments-tell-you-why.html)
 
-This is useful for readers of your program so that they can easily understand what the program is doing. Remember, that person can be yourself after six months!
+To jest przydatne dla czytających twój program. Mogą oni w ten sposób łatwo zrozumieć co robi program. Zapamiętaj, że tą osobą możesz być ty za sześć miesięcy. 
 
-## Literal Constants
+## Stałe Dosłowne
 
-An example of a literal constant is a number like `5`, `1.23`, or a string like `'This is a string'`or `"It's a string!"`. It is called a literal because it is *literal* - you use its value literally. The number `2` always represents itself and nothing else - it is a *constant* because its value cannot be changed. Hence, all these are referred to as literal constants.
+Przykładem stałej dosłownej jest liczba, np. `5`, `1.23`, czy łańcuch w rodzaju `'To jest łańcuch'` lub `"To jest łańcuch"`. Nazywa się ją dosłowną, bo jest *dosłowna* - używasz jej wartości dosłownie. Liczba `2` zawsze reprezentuje samą siebie i nic innego. Jest stałą, ponieważ jej wartość nie może być zmieniona. Stąd wszystkie stałe tego typu nazywa się stałymi dosłownymi.
 
-## Numbers
+## Liczby
 
-Numbers are mainly of two types - integers and floats.
+Liczby mogą być dwóch typów: całkowite (ang. integers) i zmiennoprzecinkowe (ang. floats).
 
-An examples of an integer is `2` which is just a whole number.
+Przykładem liczby całokowitej jest `2`.
 
-Examples of floating point numbers (or *floats* for short) are `3.23` and `52.3E-4`. The `E` notation indicates powers of 10. In this case, `52.3E-4` means `52.3 * 10^-4^`.
+Przykładem liczb zmiennoprzecinkowych są `3.23` i `52.3E-4`. Notacja `E` wskazuje potęgę dziesiątki. W tym przypadku `52.3 * 10^-4`.  
 
-Note for Experienced Programmers
+Uwaga dla Doświadczonych Programistów
 
-:   There is no separate `long` type. The `int` type can be an integer of any size.
+:   Nie ma oddzielnego typu `long`. Typ `int` może być liczbą całkowitą dowolnej wielkości.
 
-## Strings
+## Łańcuchy
 
-A string is a *sequence* of *characters*. Strings are basically just a bunch of words.
+Łańcuch (ang. string) jest *sekwencją znaków*. Łańcuch to po prostu zlepek słów.
 
-You will be using strings in almost every Python program that you write, so pay attention to the following part.
+Będziesz używał łańcuchów prawie we wszystkich programach Phytona jakie napiszesz, dlatego zwróć szczególną uwagę na tę część materiału.
 
 ### Single Quote
 

@@ -1,2 +1,4 @@
-statement - wyra¿enie
-supplay - wprowadziæ, dostarczyæ
+command prompt - linia poleceÅ„
+parentheses - nawiasy
+statement - wyraÅ¼enie
+supplay - wprowadziÄ‡, dostarczyÄ‡
